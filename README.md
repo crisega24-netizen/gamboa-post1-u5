@@ -1,6 +1,5 @@
 # Post-contenido — Unidad 5: Integración en Aplicaciones Web
 
-
 ## Descripción
 
 Repositorio del post-contenido de la Unidad 5 de Patrones de Diseño de Software.
@@ -193,6 +192,31 @@ fuente dado por el enunciado.
 - Java 17, Spring Boot 3.2, Spring Data JPA, H2, Thymeleaf
 - Apache Maven, Postman/curl, Git, GitHub
 
+## Evidencia de funcionamiento
+
+### API REST
+
+**Creación de laboratorio (201 Created):**
+![Creación de laboratorio](capturas/01-post-laboratorio-201.png)
+
+**Creación de reserva válida (201 Created):**
+![Creación de reserva](capturas/02-post-reserva-201.png)
+
+**Reserva con horario solapado (409 Conflict):**
+![Reserva solapada - API REST](capturas/03-post-reserva-solapada-409.png)
+
+### Vista MVC (Thymeleaf)
+
+**Listado de reservas (`/reservas`):**
+![Listado de reservas](capturas/04-vista-reservas.png)
+
+**Formulario de nueva reserva (`/reservas/nueva`):**
+![Formulario nueva reserva](capturas/05-vista-nueva-reserva.png)
+
+**Mismo conflicto de solapamiento, mostrado en la vista web (comparar con la
+captura de la API REST arriba — mismo mensaje de negocio, presentación
+distinta, como se explica en el Punto de decisión 4):**
+![Reserva solapada - Vista MVC](capturas/06-vista-nueva-reserva-error-solapamiento.png)
 
 ## Conclusiones
 
